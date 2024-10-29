@@ -4,8 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 05</title>
+    <style>
+        *
+        {
+            padding: 0px;
+            border: 0px;
+        }
+        html, body
+        {
+            overflow: hidden;
+        }
+        .container
+        {
+            padding: 5px;
+            text-align: center;
+            display: grid;
+            grid-template-areas: 
+            'header header header'
+            'aside_esquerdo main aside_direito'
+            'footer footer footer';
+            grid-template-columns: 1fr 5fr 1fr;
+            grid-template-rows: 10svh 77svh 10svh;
+            gap: 8px;
+        }
+        #header
+        {
+            background-color: rgb(199, 199, 19);
+            grid-area: header;
+        }
+        #main
+        {
+            gap: 8px;
+            grid-area: main;
+            display: grid;
+            grid-template-areas:
+            'main_1'
+            'main_2'
+            'main_3';
+        }
+        #main_1
+        {
+            background-color: rgb(127, 10, 10);
+            grid-area: main_1;
+        }
+        #main_2
+        {
+            grid-area: main_2;
+            background-color: rgb(48, 48, 157);
+        }
+        #main_3
+        {
+            grid-area: main_3;
+            background-color: rgb(14, 105, 14);
+        }
+        #aside_esquerdo
+        {
+            grid-area: aside_esquerdo;
+            background-color: rgb(14, 105, 14);
+        }
+        #aside_direito
+        {
+            grid-area: aside_direito;
+            background-color: rgb(199, 199, 19);
+        }
+        #footer
+        {
+            grid-area: footer;
+            background-color: rgb(48, 48, 157);
+        }
+        .container div
+        {
+
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div id="header"><p>Cabecalho</p></div>
+        <div id="main">
+            <div id="main_1"><p>Principal</p></div>
+            <div id="main_2">2</div>
+            <div id="main_3">3</div>
+        </div>
+        <div id="aside_esquerdo"><p>Aside_Esquerdo</p></div>
+        <div id="aside_direito"><p>Aside_direito</p></div>
+        <div id="footer"><p>Radapé</p></div>
+    </div>
 </body>
 </html>
