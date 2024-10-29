@@ -5,10 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 02</title>
     <style>
-        
+        *
+        {
+            border: 0px;
+            padding: 0px;
+        }
+        .container
+        {
+            gap: 5px;
+            text-align: center;
+            display: grid;
+            grid-template-areas: 
+            'header_1 header_1 header_1'
+            'main_2 aside_3 aside_4'
+            'main_5 aside_3 aside_6'
+            'main_5 footer_7 footer_7';
+        }
+
+        #header_1
+        {
+            grid-area: header_1;
+            height: 20vh;
+            background-color: rgb(226, 185, 129);
+        }
+        #main_2
+        {
+            grid-area: main_2;
+            height: 20vh;
+            background-color: rgb(230, 86, 61);
+        }
+        #aside_3
+        {
+            grid-area: aside_3;
+            background-color: rgb(226, 185, 129);
+        }
+        #aside_4
+        {
+            grid-area: aside_4;
+            background-color: rgb(230, 86, 61);
+        }  
+        #main_5
+        {
+            grid-area: main_5;
+            height: 40vh;
+            background-color: rgb(226, 185, 129);
+        }
+        #aside_6
+        {
+            grid-area: aside_6;
+            background-color: rgb(230, 86, 61);
+        }
+        #footer_7
+        {
+            grid-area: footer_7;
+            background-color: rgb(226, 185, 129);
+        }
+
+        .container div
+        {
+            border-radius: 5px;
+            border: 1px solid blue;
+        }
     </style>
 </head>
 <body>
-    
+    <div class="container" id="templade-areas">
+        <div id="header_1">
+            <p>1</p>
+        </div>
+        <div id="main_2">
+            <p>2</p>
+        </div>
+        <div id="aside_3">
+            <p>3</p>
+        </div>
+        <div id="aside_4">
+            <p>4</p>
+        </div>
+        <div id="main_5">
+            <p>5</p>
+        </div>
+        <div id="aside_6">
+            <p>6</p>
+        </div>
+        <div id="footer_7">
+            <p>7</p>
+        </div>
+    </div>
 </body>
 </html>
