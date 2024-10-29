@@ -10,18 +10,70 @@
             padding: 0px;
             border: 0px;
         }
-
+        a
+        {
+            color: white;
+            text-decoration: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
         #header
         {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
             border: 1px solid black;
-            width: 60%;
+            background-color: black;
+            height: 10vh;
+            align-items: center;
+
         }
         .header_div
         {
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            position: relative;
+            gap: 10px;
+            left: 100px;
+        }
+        .header_conteudo_7
+        {
+            position: relative;
+            left: 500px;
 
+        }
+
+        #main
+        {
+            border: 1px solid black;
+            display: grid;
+            grid-template-areas: 
+            'div_branco div_branco'
+            'div_preto div_preto'
+            'div_conteudp div_conteudp'
+        }
+        #div_branco
+        {
+            grid-area: div_branco;
+            background-color: white;
+            height: 25vh;
+        }
+        #div_preto
+        {
+            background-color: black;
+            grid-area: div_preto;
+            height: 30vh;
+        }
+        #div_conteudp
+        {
+            grid-area: div_conteudp;
+            padding: 80px;
+        }
+        .p_inicio
+        {
+            color: white;
+            font-size: 30px;
+            position: relative;
+            left: 50px;
+            top: 50px;
         }
     </style>
 </head>
@@ -51,46 +103,50 @@
             </div>
         </div>
     </header>
-    <main>
-        <div>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <main id="main">
+        <div id="div_branco"></div>
+        <div id="div_preto"><p class="p_inicio">Noticias de alguma coisa</p></div>
+        <div id="div_conteudp">
+            <div>
+                <img src="th.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="th.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="th.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="th.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="th.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="th.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="th.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="th.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="th.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="th.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
         </div>
     </main>
     <footer>
