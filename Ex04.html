@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 04</title>
+    <style>
+        *
+        {
+            padding: 0px;
+            border: 0px;
+        }
+        .container
+        {
+            gap: 5px;
+            text-align: center;
+            height: 60vh;
+            width: 100vh;
+            display: grid;
+            grid-template-areas: 
+            'header header header_1 header_2'
+            'main footer footer footer';
+        }
+
+        #header
+        {
+            grid-area: header;
+            height: 20vh;
+        }
+        #header_1
+        {
+            grid-area: header_1;
+            background-color: white;
+            height: 20vh;
+        }
+        #header_2
+        {
+            grid-area: header_2;
+            height: 20vh;
+        }
+        #main
+        {
+            grid-area: main;
+            height: 44vh;
+        }
+        #footer
+        {
+            gap: 5px;
+            align-items: end;
+            grid-area: footer;
+            height: 40vh;
+            display: grid;
+            grid-template-areas: 
+            'E F F G'
+            'M I I J';
+            padding: 15px;
+        }
+        #E
+        {
+            grid-area: E;
+            background-color: rgb(69, 66, 66);
+        }
+        #F
+        {
+            grid-area: F;
+            background-color: rgb(69, 66, 66);
+        }
+        #G
+        {
+            grid-area: G;
+            background-color: rgb(69, 66, 66);
+        }
+        #M
+        {
+            grid-area: M;
+            background-color: rgb(69, 66, 66);
+        }
+        #I
+        {
+            grid-area: I;
+            background-color: rgb(69, 66, 66);
+        }
+        #J
+        {
+            grid-area: J;
+            background-color: rgb(69, 66, 66);
+        }
+        .container div
+        {
+            color: white;
+            font-size: 40px;
+            height: 15vh;
+            border-radius: 5px;
+            background-color: rgb(113, 111, 111);
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="template-area">
+        <div id="header">A</div>
+        <div id="header_1"></div>
+        <div id="header_2">B</div>
+        <div id="main">C</div>
+        <div id="footer">
+            <div id="E">E</div>
+            <div id="F">F</div>
+            <div id="G">G</div>
+            <div id="M">M</div>
+            <div id="I">I</div>
+            <div id="J">J</div>
+        </div>
+    </div>
+</body>
+</html>
